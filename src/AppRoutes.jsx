@@ -1,4 +1,5 @@
 import { useRoutes } from "react-router-dom";
+import Product from "./pages/Product";
 
 const NotFound = () => {
   return (
@@ -13,7 +14,7 @@ export default function AppRoutes() {
   let routes = useRoutes([
     {
       path: "/",
-      element: <></>,
+      element: <>fwfwefwe</>,
     },
     {
       path: "register",
@@ -22,6 +23,10 @@ export default function AppRoutes() {
     {
       path: "login",
       element: <>login</>,
+    },
+    {
+      path: "product",
+      element: <Product />,
     },
     { path: "*", element: <NotFound /> },
   ]);

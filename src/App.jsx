@@ -5,16 +5,15 @@ import "./App.css";
 import AppRoutes from "./AppRoutes";
 
 function App() {
-	const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-	return (
-		<>
-			<Router>
-				{/* сюда будете вставлять  всякие контексты и настройки*/}
-				<AppRoutes />
-			</Router>
-		</>
-	);
+  return (
+    <>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </>
+  );
 }
 
 export default App;
