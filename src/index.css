@@ -1,3 +1,212 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+header {
+  height: 100px;
+  width: 1440px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.form-search__input::placeholder {
+  opacity: 60%;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+}
+
+.form-search {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+}
+
+.header-nav {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header__profile-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__profile-link {
+    font-size: 20px;
+  }
+
+  .header-nav {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header-nav {
+    font-size: 15px;
+  }
+
+  .header__profile-link {
+    font-size: 17px;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oneScrean {
+  background-image: url(./assets/BG1.png);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 836px;
+  color: #fff;
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 165px;
+}
+
+.icons-loco {
+  background-image: url(./assets/loco.png);
+  width: 15px;
+  height: 15px;
+}
+
+.icons-phone {
+  background-image: url(./assets/phone.png);
+  width: 15px;
+  height: 15px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.space-content {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+}
+
+.space-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Merriweather";
+}
+
+.button-catalog {
+  background-color: transparent;
+  width: 430px;
+  height: 87px;
+  border-radius: 92px;
+  border: 7px #fff solid;
+  color: #fff;
+  font-size: 32px;
+  padding: 25px 30px;
+  font-family: "Ubuntu";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twoScrean {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Ubuntu";
+}
+
+.BG2 {
+  background-image: url(./assets/BG2.png);
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.text-TS1 {
+  font-size: 42px;
+}
+
+.space-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.text-tovB {
+  font-size: 28px;
+}
+
+.text-tov {
+  font-size: 14px;
+}
+
+.tov1 {
+  background-image: url(./assets/tov1.png);
+  background-repeat: no-repeat;
+  width: 345px;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 30px 15px;
+}
+
+.tov2 {
+  background-image: url(./assets/tov2.png);
+  background-repeat: no-repeat;
+  width: 345px;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 30px 15px;
+}
+.tov3 {
+  background-image: url(./assets/tov3.png);
+  background-repeat: no-repeat;
+  width: 345px;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 30px 15px;
+}
