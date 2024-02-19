@@ -14,7 +14,7 @@ export default function AppRoutes() {
   let routes = useRoutes([
     {
       path: "/",
-      element: <>fwfwefwe</>,
+      element: <></>,
     },
     {
       path: "register",
