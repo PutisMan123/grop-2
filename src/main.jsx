@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import {Link} from 'react-router-dom'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { Link } from "react-router-dom";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
     <div className='center'>
@@ -45,10 +46,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <div className='tov3'>
               <div className='text-tovB'>Палатки</div>
               <div className='text-tov'>различных типов и размеров, подходящих для походов, кемпинга и <br></br>туризма</div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </React.StrictMode>,
+);
 )
+

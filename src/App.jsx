@@ -3,18 +3,19 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 import AppRoutes from "./AppRoutes";
+import Header from "./commponents/Header";
 
 function App() {
-	const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-	return (
-		<>
-			<Router>
-				{/* сюда будете вставлять  всякие контексты и настройки*/}
-				<AppRoutes />
-			</Router>
-		</>
-	);
+  return (
+    <>
+      <Router>
+        <Header />
+        <AppRoutes />
+      </Router>
+    </>
+  );
 }
 
 export default App;
