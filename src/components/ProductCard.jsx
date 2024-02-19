@@ -11,7 +11,7 @@ export default function ProductCard({ image, title, price, orders }) {
         }
         return titles[1];
     }
-    // склонение рубль, рублей, рубля 
+    // склонение слов
 
     return (
         <article className="product-card w-44 md:w-80">
@@ -35,7 +35,7 @@ export default function ProductCard({ image, title, price, orders }) {
                     <span className="text-xs md:text-xl">В корзину</span>
                 </button>
                 <span className="product-card__total-orders text-xs opacity-70 mt-4 text-end md:text-xl font-medium">
-                    {orders} заказов
+                    {orders + " " + wordDeclesion(orders, ["заказ", "заказа", "заказов"])} 
                 </span>
             </div>
         </article>
